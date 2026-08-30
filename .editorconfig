@@ -1,0 +1,16 @@
+# Cấu hình định dạng file cho Repo Snack
+root = true
+
+# Quy chuẩn cho tất cả các file mã nguồn/text
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Tối ưu hóa riêng cho các file ảnh snack (.jpg)
+[*.jpg]
+indent_style = unset
+insert_final_newline = false
