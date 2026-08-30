@@ -36,6 +36,19 @@ Kho lưu trữ và vinh danh tất cả các loại snack (bim bim) ngon đỉnh
 | *[Chờ upload ảnh]* | *[Chờ upload ảnh]* |
 
 ***
+## 📂 GHI CHÚ: CÁC FILE CẤU HÌNH PHỔ BIẾN TRÊN GITHUB
+### 1. File Đóng Góp & Hướng Dẫn
+* **CONTRIBUTING.md**: Hướng dẫn người khác cách đóng góp mã nguồn hoặc upload ảnh snack mới cho repo.
+* **CODE_OF_CONDUCT.md**: Quy tắc ứng xử trong cộng đồng (ví dụ: Tôn trọng gu ăn uống của nhau, không tranh cãi snack mặn hay ngọt ngon hơn).
+* **SECURITY.md**: Chính sách báo cáo lỗ hổng bảo mật (hoặc báo cáo snack bị hỏng/hết hạn).
+### 2. File Template (Mẫu Có Sẵn)
+* **.github/ISSUE_TEMPLATE/**: Mẫu để người dùng tạo Issue (ví dụ: Mẫu báo cáo "Thiếu ảnh mặt sau gói snack").
+* **.github/PULL_REQUEST_TEMPLATE.md**: Mẫu để điền khi ai đó muốn gửi ảnh snack mới vào repo của cậu.
+### 3. File Cấu Hình & Tự Động Hóa (CI/CD)
+* **.github/workflows/main.yml**: File GitHub Actions giúp tự động chạy các tác vụ (ví dụ: Tự động kiểm tra định dạng file ảnh `.jpg` mỗi khi commit).
+* **.editorconfig**: Giúp thống nhất quy chuẩn viết code/markdown trên các công cụ lập trình khác nhau.
+* **CODEOWNERS**: Khai báo quyền chủ sở hữu dự án cho gnurthieu1230.
+***
 ## 🚀 Hướng Dẫn Cập Nhật
 1. Mua snack mới về.
 2. Chụp ảnh 2 mặt (trước và sau).
