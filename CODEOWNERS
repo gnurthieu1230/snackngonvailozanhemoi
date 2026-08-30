@@ -1,1 +1,7 @@
-...
+# 👑 CODEOWNERS - DỰ ÁN SNACK NGON VAILOZ
+
+# Chỉ định gnurthieu1230 làm chủ sở hữu toàn bộ repository
+* @gnurthieu1230
+
+# Chỉ định quản lý riêng cho thư mục ảnh snack
+/snackngonvailozanhemoi/ @gnurthieu1230
