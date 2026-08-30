@@ -1,16 +1,19 @@
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+# 🚫 GITIGNORE CHO REPO SNACK NGON VAILOZ 🚫
 
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
+# Bỏ qua các file ỉu, hết hạn, ăn dở bị mốc
+*.iu
+*.hethan
+*.moc
 
-# Book build output
-_book
+# Không commit vỏ rác chưa dọn
+/rac_snack/
+/vo_banh_rong/
 
-# eBook build output
-*.epub
-*.mobi
-*.pdf
+# Bỏ qua các loại snack dở tệ không đáng lưu trữ
+snack_do_te.*
+snack_khong_ngon.*
+
+# Bỏ qua file tạm của hệ thống
+.DS_Store
+Thumbs.db
+*.log
