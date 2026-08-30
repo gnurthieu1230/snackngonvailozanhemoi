@@ -1,0 +1,39 @@
+name: Check Snack Format & Folder
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  check-snack-images:
+    name: Kiem Tra Anh Snack Va Thu Muc
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Kiem tra anh trong thư muc snack
+        run: |
+          echo "🚀 Đang kiểm tra thư mục snackngonvailozanhemoi..."
+          
+          # 1. Kiểm tra xem file ảnh có đúng đuôi .jpg viết thường không
+          INVALID_EXT=$(find snackngonvailozanhemoi/ -type f \( -name "*.png" -o -name "*.jpeg" -o -name "*.webp" -o -name "*.JPG" -o -name "*.PNG" \))
+          
+          if [ -n "$INVALID_EXT" ]; then
+            echo "❌ LỖI: Phát hiện file ảnh sai định dạng (chỉ chấp nhận .jpg viết thường):"
+            echo "$INVALID_EXT"
+            exit 1
+          fi
+
+          # 2. Kiểm tra quy tắc đặt tên ảnh mặt trước/mặt sau
+          INVALID_NAME=$(find snackngonvailozanhemoi/ -type f ! -name "*_mattruoc.jpg" ! -name "*_matsau.jpg")
+          
+          if [ -n "$INVALID_NAME" ]; then
+            echo "⚠️ CẢNH BÁO: Phát hiện ảnh chưa đặt tên theo đuôi _mattruoc.jpg hoặc _matsau.jpg:"
+            echo "$INVALID_NAME"
+          else
+            echo "✅ TUYỆT VỜI: Tất cả ảnh snack đã đúng chuẩn định dạng .jpg!"
+          fi
